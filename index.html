@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PaperMap | Attention Is All You Need, Rebuilt as an Interactive Product</title>
-  <meta name="description" content="PaperMap turns the Transformer paper into a production-grade interactive learning experience with visual demos, architecture maps, and quizzes.">
+  <meta name="description" content="PaperMap is a multi-paper interactive library that turns research papers into visual learning products.">
   <meta name="theme-color" content="#0b1220">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="shortcut icon" href="./favicon.svg">
-  <meta property="og:title" content="PaperMap | Attention Is All You Need">
-  <meta property="og:description" content="A product-level interactive paper explainer for the Transformer architecture.">
+  <meta property="og:title" content="PaperMap | Interactive Paper Library">
+  <meta property="og:description" content="Explore and publish interactive explainers for ML and AI research papers.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -331,6 +331,107 @@
       line-height: 1.7;
     }
 
+    .catalog {
+      margin-top: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: var(--shadow-1);
+      padding: 20px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--ink-1);
+    }
+
+    .section-copy {
+      margin: 0;
+      color: var(--ink-3);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .paper-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .paper-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.88);
+      padding: 14px;
+      transition: transform .22s ease, box-shadow .22s ease;
+    }
+
+    .paper-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-2);
+    }
+
+    .paper-tag {
+      display: inline-flex;
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      margin-bottom: 10px;
+      border: 1px solid var(--line);
+      color: var(--ink-2);
+      background: var(--bg-3);
+    }
+
+    .paper-tag.live {
+      border-color: rgba(18, 184, 134, 0.3);
+      color: #0b7a58;
+      background: rgba(18, 184, 134, 0.12);
+    }
+
+    .paper-card h3 {
+      margin: 0 0 6px;
+      color: var(--ink-1);
+      font-size: 1rem;
+    }
+
+    .paper-card p {
+      margin: 0;
+      color: var(--ink-3);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .paper-link {
+      margin-top: 10px;
+      display: inline-flex;
+      text-decoration: none;
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .roadmap {
+      margin-top: 14px;
+      border-top: 1px dashed var(--line);
+      padding-top: 12px;
+      color: var(--ink-3);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
     .footer-note {
       margin-top: 22px;
       text-align: center;
@@ -517,51 +618,51 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <article class="hero-main">
-          <span class="eyebrow">Interactive Research Experience</span>
-          <h1 class="title" id="hero-title">From paper to <i>product-level learning</i>.</h1>
+          <span class="eyebrow">Interactive Research Library</span>
+          <h1 class="title" id="hero-title">From research papers to <i>reusable learning products</i>.</h1>
           <p class="subtitle">
-            PaperMap transforms “Attention Is All You Need” into a clear, visual, and hands-on web product.
-            Explore tokenization, embeddings, multi-head attention, architecture internals, and quiz checkpoints in one continuous flow.
+            PaperMap is designed as a scalable home for multiple interactive paper explainers.
+            Start with a featured paper today, then expand the library with new papers over time using the same design and structure.
           </p>
           <div class="cta-row">
-            <a class="btn-primary" href="./Attention_Is_All_You_Need.html">Open Full Explainer</a>
+            <a class="btn-primary" href="#paper-library">Explore Paper Library</a>
             <a class="btn-ghost" href="./README.md">Project Documentation</a>
           </div>
           <div class="hero-metrics" aria-label="Project highlights">
             <div class="metric">
-              <div class="metric-num">10+ demos</div>
-              <div class="metric-label">Interactive Modules</div>
+              <div class="metric-num">1 live</div>
+              <div class="metric-label">Published Paper</div>
             </div>
             <div class="metric">
-              <div class="metric-num">Single file</div>
-              <div class="metric-label">Easy Deployment</div>
+              <div class="metric-num">Catalog-ready</div>
+              <div class="metric-label">Multi-Paper Home</div>
             </div>
             <div class="metric">
               <div class="metric-num">0 build step</div>
-              <div class="metric-label">Fast Local Run</div>
+              <div class="metric-label">Fast Shipping</div>
             </div>
           </div>
         </article>
 
         <aside class="hero-side" aria-label="Product timeline">
           <div class="chip-row">
-            <span class="chip">Tokenizer Lab</span>
-            <span class="chip">Attention Maps</span>
-            <span class="chip">Architecture SVG</span>
-            <span class="chip">Knowledge Quiz</span>
+            <span class="chip">Paper Catalog</span>
+            <span class="chip">Reusable Template</span>
+            <span class="chip">Static Hosting</span>
+            <span class="chip">Future Friendly</span>
           </div>
-          <h2 class="mini-title">Learning Journey</h2>
+          <h2 class="mini-title">Expansion Plan</h2>
           <div class="milestone">
-            <h3>1. Why Transformers</h3>
-            <p>See where recurrent models bottleneck and why parallel attention changed the game.</p>
-          </div>
-          <div class="milestone">
-            <h3>2. Build Intuition</h3>
-            <p>Interact with tokenization, embeddings, self-attention, and cross-attention components.</p>
+            <h3>1. Publish featured paper</h3>
+            <p>Ship one high-quality explainer with production-level UX and interactions.</p>
           </div>
           <div class="milestone">
-            <h3>3. Validate Understanding</h3>
-            <p>Use quizzes and metric sections to validate concepts and connect to practical LLM systems.</p>
+            <h3>2. Add more papers</h3>
+            <p>Create new paper pages and list them in the catalog section below.</p>
+          </div>
+          <div class="milestone">
+            <h3>3. Scale the library</h3>
+            <p>Grow PaperMap into a complete interactive index of important research papers.</p>
           </div>
         </aside>
       </section>
@@ -579,6 +680,39 @@
           <h2>Performance-minded defaults</h2>
           <p>Single-page loading model, minimal dependencies, and reduced-motion support for smoother behavior across devices.</p>
         </article>
+      </section>
+
+      <section class="catalog" id="paper-library" aria-label="Paper library">
+        <div class="section-head">
+          <h2 class="section-title">Paper Library</h2>
+          <p class="section-copy">A scalable home page layout for all current and upcoming interactive papers.</p>
+        </div>
+
+        <div class="paper-grid">
+          <article class="paper-card">
+            <span class="paper-tag live">Live</span>
+            <h3>Attention Is All You Need</h3>
+            <p>Interactive walkthrough of the Transformer paper with visual modules, architecture maps, and quiz blocks.</p>
+            <a class="paper-link" href="./Attention_Is_All_You_Need.html">Open Paper</a>
+          </article>
+
+          <article class="paper-card">
+            <span class="paper-tag">Planned</span>
+            <h3>Next Paper Slot</h3>
+            <p>Reserve this card for your next explainer page. Keep title, summary, and link in the same format.</p>
+          </article>
+
+          <article class="paper-card">
+            <span class="paper-tag">Planned</span>
+            <h3>Future Paper Slot</h3>
+            <p>Use this structure for each new paper so the site remains consistent, readable, and production-ready.</p>
+          </article>
+        </div>
+
+        <div class="roadmap">
+          Add a new paper by creating a new HTML file and adding one new card in this section.
+          Keep card metadata consistent: status, paper title, short summary, and direct page link.
+        </div>
       </section>
     </main>
 
