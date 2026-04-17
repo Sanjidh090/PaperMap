@@ -290,6 +290,7 @@ nav {
 .paper-card.amber::before { background: var(--amber); }
 .paper-card.blue::before { background: var(--blue); }
 .paper-card.teal::before { background: var(--teal); }
+.paper-card.purple::before { background: var(--purple); }
 .paper-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(15,23,42,0.10);
@@ -556,7 +557,7 @@ footer {
     <a class="nav-link" href="#roadmap">Roadmap</a>
   </div>
   <div class="nav-actions">
-    <div class="nav-badge">3 Papers Live</div>
+    <div class="nav-badge">4 Papers Live</div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   </div>
 </nav>
@@ -568,6 +569,7 @@ footer {
   <a href="./paper/Attention_Is_All_You_Need.html">Transformer</a>
   <a href="./paper/Language_Models_are_Few_Shot_Learners.html">GPT-3</a>
   <a href="./paper/Training_Language_Models_to_Follow_Instructions_with_Human_Feedback.html">InstructGPT</a>
+  <a href="./paper/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks.html">RAG</a>
 </div>
 
 <!-- HERO -->
@@ -580,7 +582,7 @@ footer {
   </h1>
   <p class="hero-subtitle">
     PaperMap turns landmark AI research papers into visual, interactive learning experiences.
-    Explore the Transformer, GPT-3, and InstructGPT — rebuilt as production-grade explainers.
+    Explore the Transformer, GPT-3, InstructGPT, and RAG — rebuilt as production-grade explainers.
   </p>
   <div class="hero-actions">
     <a class="btn-primary" href="#library">Explore Paper Library →</a>
@@ -588,7 +590,7 @@ footer {
   </div>
   <div class="hero-stats">
     <div class="stat">
-      <div class="stat-num">3</div>
+      <div class="stat-num">4</div>
       <div class="stat-label">Papers Live</div>
     </div>
     <div class="stat">
@@ -661,6 +663,21 @@ footer {
       <a class="paper-link" href="./paper/Training_Language_Models_to_Follow_Instructions_with_Human_Feedback.html">Open Explainer →</a>
     </article>
 
+    <!-- Paper 4: RAG -->
+    <article class="paper-card purple">
+      <span class="paper-tag live">Live</span>
+      <div class="paper-year">Lewis et al. · 2020</div>
+      <h3>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</h3>
+      <p>An interactive deep dive into the original RAG paper: dense retrieval with DPR, BART generation, non-parametric memory with Wikipedia, and benchmark gains on knowledge-intensive QA.</p>
+      <div class="paper-meta">
+        <span class="paper-meta-tag">RAG</span>
+        <span class="paper-meta-tag">Dense Retrieval</span>
+        <span class="paper-meta-tag">BART</span>
+        <span class="paper-meta-tag">Knowledge QA</span>
+      </div>
+      <a class="paper-link" href="./paper/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks.html">Open Explainer →</a>
+    </article>
+
   </div>
 </div>
 
@@ -727,9 +744,13 @@ footer {
       <h4>✓ InstructGPT & RLHF</h4>
       <p>3-step RLHF pipeline, reward modeling, PPO, human evaluations, alignment tax, bias analysis.</p>
     </div>
+    <div class="roadmap-item done">
+      <h4>✓ RAG: Retrieval-Augmented Generation</h4>
+      <p>Dense retrieval with DPR, BART generation, non-parametric memory, and SOTA gains on knowledge-intensive QA.</p>
+    </div>
     <div class="roadmap-item next">
       <h4>→ Next: More Papers</h4>
-      <p>BERT, diffusion models, retrieval-augmented generation, and more landmark papers coming soon.</p>
+      <p>BERT, diffusion models, multimodal systems, and more landmark papers coming soon.</p>
     </div>
   </div>
 </div>
@@ -745,6 +766,7 @@ footer {
     <a class="footer-link" href="./paper/Attention_Is_All_You_Need.html">Transformer</a>
     <a class="footer-link" href="./paper/Language_Models_are_Few_Shot_Learners.html">GPT-3</a>
     <a class="footer-link" href="./paper/Training_Language_Models_to_Follow_Instructions_with_Human_Feedback.html">InstructGPT</a>
+    <a class="footer-link" href="./paper/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks.html">RAG</a>
     <a class="footer-link" href="https://github.com/AdilShamim8/PaperMap" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
   <div class="footer-contact">
