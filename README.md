@@ -90,9 +90,9 @@ If you want an easy, guided process, use the workflow below.
 ## Easy Contribution Workflow (Using Prompt + Claude)
 
 1. Open this document and copy the prompt template:
-   https://docs.google.com/document/d/1PYVkWYqFDUZ6bY1hyAk7zOauGnyIIWjDh44S918wOCM/edit?usp=sharing
-2. Go to Claude AI:
-   https://claude.ai
+   [prompt.md](https://github.com/Sanjidh090/PaperMap/blob/main/prompt.md)
+2. Go to [Claude AI](https://claude.ai):
+   
 3. Paste the prompt you copied from the document.
 4. Provide your paper details: paper name, official publication link, and PDF link (recommended).
 5. Ask Claude to generate a complete HTML explainer.
