@@ -18,7 +18,7 @@ Current status: 5 live interactive paper explainers.
 - [Training Language Models to Follow Instructions with Human Feedback](https://papermap.vercel.app/paper/Training_Language_Models_to_Follow_Instructions_with_Human_Feedback.html)
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://papermap.vercel.app/paper/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks.html)
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://papermap.vercel.app/paper/LoRA%20Low-Rank%20Adaptation%20of%20Large%20Language%20Models.html)
-- [Moonshine v2: Streaming Speech Recognition for Edge Devices](file:///C:/Users/sanji/Downloads/PaperMap-main/PaperMap-main/paper/moonshine_v2_paper_explainer.html)
+- [Moonshine v2: Streaming Speech Recognition for Edge Devices](https://github.com/Sanjidh090/PaperMap/blob/main/paper/moonshine_v2_paper_explainer.html)
 ## Why PaperMap
 
 - Interactive explanations instead of static summaries
